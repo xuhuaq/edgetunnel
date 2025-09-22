@@ -1,6 +1,5 @@
 ﻿
 import { connect } from 'cloudflare:sockets';
-
 let userID = '';
 let proxyIP = '';
 let DNS64Server = '';
@@ -14,7 +13,7 @@ let parsedSocks5Address = {};
 let enableSocks = false;
 let enableHttp = false;
 let noTLS = 'false';
-const expire = 4102329600;//2099-12-31
+const expire = 4102320000;
 let proxyIPs;
 let socks5s;
 let go2Socks5s = [
@@ -7175,4 +7174,5 @@ function config_Html(token = "test", proxyhost = "") {
 </html>`;
 
     return html;
+
 }
